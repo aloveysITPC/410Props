@@ -1,6 +1,17 @@
 import React from "react";
 import ReactDOM from "react-dom";
 
+// create a component Card
+function Card() {
+  return;
+  <div>
+    <h2></h2>
+    <img></img>
+    <p></p>
+    <p></p>
+  </div>;
+}
+
 ReactDOM.render(
   <div>
     <h1>My Contacts</h1>
