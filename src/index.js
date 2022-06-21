@@ -2,20 +2,26 @@ import React from "react";
 import ReactDOM from "react-dom";
 
 // create a component Card
-function Card() {
-  return;
-  <div>
-    <h2></h2>
-    <img></img>
-    <p></p>
-    <p></p>
-  </div>;
+function Card(props) {
+  return (
+    <div>
+      <h2>{props.name}</h2>
+      <img src={props.img} alt="avatar_img" />
+      <p>{props.tel}</p>
+      <p>{props.email}</p>
+    </div>
+  );
 }
 
 ReactDOM.render(
   <div>
     <h1>My Contacts</h1>
-
+    <Card
+      name="Beyonce"
+      img="https://blackhistorywall.files.wordpress.com/2010/02/picture-device-independent-bitmap-119.jpg"
+      tel="123 457 789"
+      email="b@beyonce.com"
+    />
     <h2>Beyonce</h2>
     <img
       src="https://blackhistorywall.files.wordpress.com/2010/02/picture-device-independent-bitmap-119.jpg"
